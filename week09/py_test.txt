@@ -1,0 +1,130 @@
+print("안녕하세요")
+
+======================================
+
+print("안녕하세요")
+print("안녕하세요")
+print("안녕하세요")
+
+======================================
+
+print("안녕하세요\n" * 3)
+
+======================================
+
+i=0
+while i < 3:
+    print("안녕하세요")
+    i++
+
+======================================
+
+for i in range(3):
+    print("안녕하세요")
+
+======================================
+
+def hello():
+    print("안녕하세요")
+
+======================================
+
+hello()
+hello()
+hello()
+
+======================================
+
+i=0
+while i < 3:
+    hello()
+    i++
+
+======================================
+
+for i in range(3):
+    hello()
+
+======================================
+
+def hello(num):
+    print("안녕하세요\n" * num)
+
+======================================
+
+def hello(num):
+    i=0
+    while i < num:    
+        print("안녕하세요")
+        i++
+
+======================================
+
+def hello(num):
+    for i in range(num):
+        print("안녕하세요")
+
+======================================
+
+def add(num1, num2):
+    return num1+num2
+
+======================================
+
+def sub(num1, num2):
+    return num1-num2
+
+======================================
+##case1
+
+def div(num1, num2):
+    if num2 == 0:
+        return None
+
+    return num1/num2
+
+======================================
+##case2
+
+def div(num1, num2):
+    if num2 != 0:
+        return num1/num2
+
+======================================
+
+def hello(text, num):
+    for i in range(num):
+        print(text)
+
+======================================
+
+def list_sum(arr):
+    return sum(arr)
+
+======================================
+
+def list_avg(arr):
+    return sum(arr)/len(arr)
+
+======================================
+
+def remove_value(arr, num):
+    new_arr=[]
+    for i in range(len(arr)):
+        if arr[i] != num:
+	new_arr.append(arr[i])
+    
+    return new_arr
+
+======================================
+
+def merge_list(arr1, arr2):
+    new_arr = arr1[:]
+    for i in range(len(arr2)):
+        cnt = 0
+        for j in range(len(arr1)):
+            if arr1[j] == arr2[i]:
+	    cnt++
+        
+        if cnt == 0:
+            new_arr.append(arr2[i])
